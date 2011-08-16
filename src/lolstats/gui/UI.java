@@ -2,9 +2,11 @@ package lolstats.gui;
 
 /**
  * Graphical User Interface for player searching and data.
- * @ author Devin
+ * @author Devin
 **/
 import lolstats.Config;
+
+import javax.swing.*;
 
 public class UI extends JFrame {
 	public Config c;
@@ -12,7 +14,7 @@ public class UI extends JFrame {
 	public UI() {
 		init();
 		pack();
-		setTitle(c.getTitle());
+		setTitle(c.getName());
 		setResizable(false);
 	}
 	
@@ -20,7 +22,7 @@ public class UI extends JFrame {
 	
 	public void pack() {}
 	
-	public void setTitle(final String title) {
+	public void setTitle(final String t) {
 		super.setTitle(t);	
 	}
 		

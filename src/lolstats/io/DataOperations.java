@@ -4,14 +4,14 @@ package lolstats.io;
  * DataOperations will format rawData to actual information.
  * @author Devin
  */
+
 import lolstats.util.Formatting;
 
-public class DataOperations {
-    public Formatting f;
+public class DataOperations extends Formatting {
 
     public DataOperations(String str) {
-        str = f.stripHTML(str);
-        str = f.stripTabs(str);
+        str = stripHTML(str);
+        str = stripTabs(str);
         System.out.print(str);
     }
 

@@ -1,5 +1,9 @@
 package lolstats.io;
 
+/**
+ * Reads the source of the web page.
+ * @author Devin
+ */
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;

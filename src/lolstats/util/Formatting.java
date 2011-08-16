@@ -4,7 +4,9 @@ package lolstats.util;
  * Utility to format strings.
  * @author Devin
  */
-public class Formatting {
+import lolstats.Loop;
+
+public class Formatting extends Loop {
 
     public String stripHTML(final String str) {
         System.out.println("Removing html from data.");
@@ -22,10 +24,10 @@ public class Formatting {
         return "";
     }
 
-    public String getID(String str) {
-        String a = "";
+    public String getpID() {
+        String a;
         int b;
-        a = str.replace("[{\"id\":\"", "");
+        a = webReader.rawData.replace("[{\"id\":\"", "");
         b = a.indexOf("\"");
         a = a.substring(0, b);
         return a;

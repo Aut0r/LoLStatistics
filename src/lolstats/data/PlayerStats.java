@@ -3,6 +3,7 @@ package lolstats.data;
 /**
  * Player statistics data
  * Contains minon kills, turret kills, kills, deaths, assists, and kill-death ratio
+ * @author Devin
  */
 public class PlayerStats {
     public int kills;
